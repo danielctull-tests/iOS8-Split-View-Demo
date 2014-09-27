@@ -12,6 +12,8 @@
 
 @implementation MasterViewController
 
+#pragma mark - UIViewController
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 
 	id viewController = segue.destinationViewController;
@@ -26,6 +28,22 @@
 		detail.detailItem = string;
 	}
 }
+
+- (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection
+			  withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+
+	[super willTransitionToTraitCollection:newCollection
+				 withTransitionCoordinator:coordinator];
+
+	if (!self.isViewLoaded) {
+		return;
+	}
+
+	[self.tableView reloadRowsAtIndexPaths:self.tableView.indexPathsForVisibleRows
+						  withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+#pragma mark - MasterViewController
 
 - (NSString *)stringForIndexPath:(NSIndexPath *)indexPath {
 	return [NSString stringWithFormat:@"Row %@", @(indexPath.row)];
