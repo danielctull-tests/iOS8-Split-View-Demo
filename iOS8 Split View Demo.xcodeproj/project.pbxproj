@@ -93,18 +93,10 @@
 				24D55DB419D74F97005E2016 /* Main.storyboard */,
 				24D55DB719D74F97005E2016 /* Images.xcassets */,
 				24D55DB919D74F97005E2016 /* LaunchScreen.xib */,
-				24D55DA719D74F97005E2016 /* Supporting Files */,
-			);
-			path = "iOS8 Split View Demo";
-			sourceTree = "<group>";
-		};
-		24D55DA719D74F97005E2016 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
 				24D55DA819D74F97005E2016 /* Info.plist */,
 				24D55DA919D74F97005E2016 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "iOS8 Split View Demo";
 			sourceTree = "<group>";
 		};
 		24D55DC319D74F97005E2016 /* iOS8 Split View DemoTests */ = {

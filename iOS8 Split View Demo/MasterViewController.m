@@ -10,8 +10,7 @@
 #import "DetailViewController.h"
 
 @interface MasterViewController ()
-
-@property NSMutableArray *objects;
+@property (nonatomic) NSMutableArray *objects;
 @end
 
 @implementation MasterViewController
@@ -34,11 +33,6 @@
 	self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
-- (void)didReceiveMemoryWarning {
-	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
-}
-
 - (void)insertNewObject:(id)sender {
 	if (!self.objects) {
 	    self.objects = [[NSMutableArray alloc] init];
@@ -47,8 +41,6 @@
 	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
 	[self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
-
-#pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 	if ([[segue identifier] isEqualToString:@"showDetail"]) {
@@ -61,11 +53,7 @@
 	}
 }
 
-#pragma mark - Table View
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return 1;
-}
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	return self.objects.count;
