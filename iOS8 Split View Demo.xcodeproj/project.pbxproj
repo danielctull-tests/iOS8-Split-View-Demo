@@ -14,18 +14,8 @@
 		24D55DB619D74F97005E2016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D55DB419D74F97005E2016 /* Main.storyboard */; };
 		24D55DB819D74F97005E2016 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D55DB719D74F97005E2016 /* Images.xcassets */; };
 		24D55DBB19D74F97005E2016 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D55DB919D74F97005E2016 /* LaunchScreen.xib */; };
-		24D55DC719D74F97005E2016 /* iOS8_Split_View_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D55DC619D74F97005E2016 /* iOS8_Split_View_DemoTests.m */; };
+		24D55DD619D754B1005E2016 /* UIViewController+ViewControllerShowing.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D55DD519D754B1005E2016 /* UIViewController+ViewControllerShowing.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		24D55DC119D74F97005E2016 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 24D55D9C19D74F97005E2016 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 24D55DA319D74F97005E2016;
-			remoteInfo = "iOS8 Split View Demo";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		24D55DA419D74F97005E2016 /* iOS8 Split View Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS8 Split View Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,20 +30,12 @@
 		24D55DB519D74F97005E2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24D55DB719D74F97005E2016 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		24D55DBA19D74F97005E2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		24D55DC019D74F97005E2016 /* iOS8 Split View DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS8 Split View DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		24D55DC519D74F97005E2016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24D55DC619D74F97005E2016 /* iOS8_Split_View_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS8_Split_View_DemoTests.m; sourceTree = "<group>"; };
+		24D55DD419D754B1005E2016 /* UIViewController+ViewControllerShowing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ViewControllerShowing.h"; sourceTree = "<group>"; };
+		24D55DD519D754B1005E2016 /* UIViewController+ViewControllerShowing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ViewControllerShowing.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		24D55DA119D74F97005E2016 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		24D55DBD19D74F97005E2016 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				24D55DA619D74F97005E2016 /* iOS8 Split View Demo */,
-				24D55DC319D74F97005E2016 /* iOS8 Split View DemoTests */,
 				24D55DA519D74F97005E2016 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				24D55DA419D74F97005E2016 /* iOS8 Split View Demo.app */,
-				24D55DC019D74F97005E2016 /* iOS8 Split View DemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +70,8 @@
 				24D55DAF19D74F97005E2016 /* MasterViewController.m */,
 				24D55DB119D74F97005E2016 /* DetailViewController.h */,
 				24D55DB219D74F97005E2016 /* DetailViewController.m */,
+				24D55DD419D754B1005E2016 /* UIViewController+ViewControllerShowing.h */,
+				24D55DD519D754B1005E2016 /* UIViewController+ViewControllerShowing.m */,
 				24D55DB419D74F97005E2016 /* Main.storyboard */,
 				24D55DB719D74F97005E2016 /* Images.xcassets */,
 				24D55DB919D74F97005E2016 /* LaunchScreen.xib */,
@@ -97,23 +79,6 @@
 				24D55DA919D74F97005E2016 /* main.m */,
 			);
 			path = "iOS8 Split View Demo";
-			sourceTree = "<group>";
-		};
-		24D55DC319D74F97005E2016 /* iOS8 Split View DemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				24D55DC619D74F97005E2016 /* iOS8_Split_View_DemoTests.m */,
-				24D55DC419D74F97005E2016 /* Supporting Files */,
-			);
-			path = "iOS8 Split View DemoTests";
-			sourceTree = "<group>";
-		};
-		24D55DC419D74F97005E2016 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				24D55DC519D74F97005E2016 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,24 +101,6 @@
 			productReference = 24D55DA419D74F97005E2016 /* iOS8 Split View Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		24D55DBF19D74F97005E2016 /* iOS8 Split View DemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 24D55DCD19D74F97005E2016 /* Build configuration list for PBXNativeTarget "iOS8 Split View DemoTests" */;
-			buildPhases = (
-				24D55DBC19D74F97005E2016 /* Sources */,
-				24D55DBD19D74F97005E2016 /* Frameworks */,
-				24D55DBE19D74F97005E2016 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				24D55DC219D74F97005E2016 /* PBXTargetDependency */,
-			);
-			name = "iOS8 Split View DemoTests";
-			productName = "iOS8 Split View DemoTests";
-			productReference = 24D55DC019D74F97005E2016 /* iOS8 Split View DemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,10 +112,6 @@
 				TargetAttributes = {
 					24D55DA319D74F97005E2016 = {
 						CreatedOnToolsVersion = 6.0.1;
-					};
-					24D55DBF19D74F97005E2016 = {
-						CreatedOnToolsVersion = 6.0.1;
-						TestTargetID = 24D55DA319D74F97005E2016;
 					};
 				};
 			};
@@ -186,7 +129,6 @@
 			projectRoot = "";
 			targets = (
 				24D55DA319D74F97005E2016 /* iOS8 Split View Demo */,
-				24D55DBF19D74F97005E2016 /* iOS8 Split View DemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,13 +144,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24D55DBE19D74F97005E2016 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -220,26 +155,11 @@
 				24D55DB019D74F97005E2016 /* MasterViewController.m in Sources */,
 				24D55DAA19D74F97005E2016 /* main.m in Sources */,
 				24D55DB319D74F97005E2016 /* DetailViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		24D55DBC19D74F97005E2016 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				24D55DC719D74F97005E2016 /* iOS8_Split_View_DemoTests.m in Sources */,
+				24D55DD619D754B1005E2016 /* UIViewController+ViewControllerShowing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		24D55DC219D74F97005E2016 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 24D55DA319D74F97005E2016 /* iOS8 Split View Demo */;
-			targetProxy = 24D55DC119D74F97005E2016 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		24D55DB419D74F97005E2016 /* Main.storyboard */ = {
@@ -300,6 +220,10 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-Weverything",
+					"-Wno-objc-missing-property-synthesis",
+				);
 			};
 			name = Debug;
 		};
@@ -336,6 +260,10 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Weverything",
+					"-Wno-objc-missing-property-synthesis",
+				);
 			};
 			name = Release;
 		};
@@ -359,40 +287,6 @@
 			};
 			name = Release;
 		};
-		24D55DCE19D74F97005E2016 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "iOS8 Split View DemoTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS8 Split View Demo.app/iOS8 Split View Demo";
-			};
-			name = Debug;
-		};
-		24D55DCF19D74F97005E2016 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "iOS8 Split View DemoTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS8 Split View Demo.app/iOS8 Split View Demo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,14 +304,6 @@
 			buildConfigurations = (
 				24D55DCB19D74F97005E2016 /* Debug */,
 				24D55DCC19D74F97005E2016 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		24D55DCD19D74F97005E2016 /* Build configuration list for PBXNativeTarget "iOS8 Split View DemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24D55DCE19D74F97005E2016 /* Debug */,
-				24D55DCF19D74F97005E2016 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

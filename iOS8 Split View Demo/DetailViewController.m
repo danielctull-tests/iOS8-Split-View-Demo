@@ -14,7 +14,14 @@
 
 @implementation DetailViewController
 
-#pragma mark - Managing the detail item
+#pragma mark - UIViewController
+
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	[self configureView];
+}
+
+#pragma mark - DetailViewController
 
 - (void)setDetailItem:(id)newDetailItem {
 	_detailItem = newDetailItem;
@@ -22,14 +29,9 @@
 }
 
 - (void)configureView {
-	if (!self.detailItem || !self.isViewLoaded) {
-	    self.detailDescriptionLabel.text = [self.detailItem description];
+	if (self.detailItem && self.isViewLoaded) {
+		self.detailDescriptionLabel.text = [self.detailItem description];
 	}
-}
-
-- (void)viewDidLoad {
-	[super viewDidLoad];
-	[self configureView];
 }
 
 @end
